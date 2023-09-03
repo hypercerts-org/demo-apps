@@ -32,7 +32,6 @@ export default function Home() {
       </div>
 
       <div>
-        {console.log("client: ", client)}
         <code>
           {client.readonly
             ? "Client is connected in readonly mode"
