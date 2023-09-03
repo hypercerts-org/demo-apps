@@ -1,4 +1,4 @@
-name: Build NextJS Typescript Hypercerts
+name: Build NextJS JS Hypercerts
 
 on:
   # A push occurs to one of the matched branches.
@@ -16,11 +16,11 @@ on:
 jobs:
   lint-and-build:
     # NOTE: This name appears in GitHub's Checks API.
-    name: Lint and build NextJS TS app
+    name: Lint and build NextJS JS app
     runs-on: ubuntu-latest
     defaults:
         run:
-          working-directory: ./apps/nextjs-ts-hypercerts
+          working-directory: ./apps/nextjs-hypercerts
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -29,7 +29,7 @@ jobs:
         with:
           node-version: "18.15.0"
           cache: "yarn"
-          cache-dependency-path: ./apps/nextjs-ts-hypercerts/yarn.lock
+          cache-dependency-path: ./apps/nextjs-hypercerts/yarn.lock
       - name: Install dependencies
         run: yarn install
       - name: Lint
