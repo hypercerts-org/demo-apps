@@ -18,6 +18,9 @@ jobs:
     # NOTE: This name appears in GitHub's Checks API.
     name: Lint and build NextJS app
     runs-on: ubuntu-latest
+    defaults:
+        run:
+          working-directory: ./apps/nextjs-ts-hypercerts
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
