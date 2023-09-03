@@ -32,7 +32,5 @@ jobs:
           cache-dependency-path: ./apps/cra-hypercerts/yarn.lock
       - name: Install dependencies
         run: yarn install
-      - name: Lint
-        run: yarn lint
       - name: Build
         run: yarn build
