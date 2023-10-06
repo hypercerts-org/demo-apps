@@ -32,7 +32,12 @@ export default function Home() {
       </div>
 
       <div>
-        <code>
+        <code
+          style={{
+            fontSize: "20px",
+            color: client.readonly ? "lightgreen" : "inherit",
+          }}
+        >
           {client.readonly
             ? "Client is connected in readonly mode"
             : "Client not in readonly mode"}
