@@ -44,6 +44,40 @@ export default function Home() {
         </code>
       </div>
 
+      {client && client.config ? (
+        <div>
+          <code
+            style={{
+              fontSize: "20px",
+              color: client ? "lightgreen" : "inherit",
+            }}
+          >
+            <table>
+              <thead style={{ textAlign: "left" }}>
+                <tr>
+                  <th>Key</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                {Object.entries(client.config).map(([key, value]) => (
+                  <tr key={key}>
+                    <td
+                      style={{
+                        paddingRight: "1rem",
+                      }}
+                    >
+                      {key}
+                    </td>
+                    <td style={{ color: "white" }}>{value.toString()}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </code>
+        </div>
+      ) : undefined}
+
       <div className={styles.grid}>
         <a
           href="https://hypercerts.org/docs/"

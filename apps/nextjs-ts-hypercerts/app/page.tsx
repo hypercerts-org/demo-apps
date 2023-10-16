@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import styles from "./page.module.css";
 import { HypercertClient } from "@hypercerts-org/sdk";
@@ -35,14 +36,48 @@ export default function Home() {
         <code
           style={{
             fontSize: "20px",
-            color: client.readonly ? "lightgreen" : "inherit",
+            color: client ? "lightgreen" : "inherit",
           }}
         >
-          {client.readonly
+          {client
             ? "Client is connected in readonly mode"
             : "Client not in readonly mode"}
         </code>
       </div>
+
+      {client && client.config ? (
+        <div>
+          <code
+            style={{
+              fontSize: "20px",
+              color: client ? "lightgreen" : "inherit",
+            }}
+          >
+            <table>
+              <thead style={{ textAlign: "left" }}>
+                <tr>
+                  <th>Key</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                {Object.entries(client.config).map(([key, value]) => (
+                  <tr key={key}>
+                    <td
+                      style={{
+                        paddingRight: "1rem",
+                      }}
+                    >
+                      {key}
+                    </td>
+                    <td style={{ color: "white" }}>{value.toString()}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </code>
+        </div>
+      ) : undefined}
 
       <div className={styles.grid}>
         <a
