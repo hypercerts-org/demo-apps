@@ -19,20 +19,24 @@ jobs:
     name: Lint and build NextJS JS app
     runs-on: ubuntu-latest
     defaults:
-        run:
-          working-directory: ./apps/nextjs-hypercerts
+      run:
+        working-directory: ./apps/nextjs-hypercerts
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8.9.0
       - name: Set up Node.js 18
         uses: actions/setup-node@v3
         with:
           node-version: "18.15.0"
-          cache: "yarn"
-          cache-dependency-path: ./apps/nextjs-hypercerts/yarn.lock
+          cache: "pnpm"
+          cache-dependency-path: ./apps/nextjs-hypercerts/pnpm-lock.yaml
       - name: Install dependencies
-        run: yarn install
+        run: pnpm install
       - name: Lint
-        run: yarn lint
+        run: pnpm lint
       - name: Build
-        run: yarn build
+        run: pnpm build
