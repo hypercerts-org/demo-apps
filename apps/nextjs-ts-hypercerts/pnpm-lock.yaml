@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@hypercerts-org/sdk':
-    specifier: ^0.8.8
-    version: 0.8.8(@babel/core@7.23.2)(@envelop/core@3.0.6)(@ethersproject/abi@5.7.0)(@ethersproject/providers@5.7.2)(@graphql-mesh/cross-helpers@0.3.4)(@graphql-mesh/store@0.93.1)(@graphql-mesh/types@0.93.2)(@graphql-mesh/utils@0.93.2)(@graphql-tools/delegate@9.0.35)(@graphql-tools/merge@8.4.2)(@graphql-tools/utils@9.2.1)(@graphql-tools/wrap@9.4.2)(@types/node@20.5.7)(graphql-tag@2.12.6)(node-fetch@3.3.2)(react-native@0.72.6)(typescript@5.2.2)(uint8arraylist@2.4.3)
+    specifier: ^0.8.9
+    version: 0.8.9(@babel/core@7.23.2)(@envelop/core@3.0.6)(@ethersproject/abi@5.7.0)(@ethersproject/providers@5.7.2)(@graphql-mesh/cross-helpers@0.3.4)(@graphql-mesh/store@0.93.1)(@graphql-mesh/types@0.93.2)(@graphql-mesh/utils@0.93.2)(@graphql-tools/delegate@9.0.35)(@graphql-tools/merge@8.4.2)(@graphql-tools/utils@9.2.1)(@graphql-tools/wrap@9.4.2)(@types/node@20.5.7)(graphql-tag@2.12.6)(node-fetch@3.3.2)(react-native@0.72.6)(typescript@5.2.2)(uint8arraylist@2.4.3)
   '@types/node':
     specifier: 20.5.7
     version: 20.5.7
@@ -3137,8 +3137,8 @@ packages:
     resolution: {integrity: sha512-vs4sC51cZT2t5/TOQh57Wqx9oofRFX3tLkAQbQ6737uqxFIKKZWAb3vgbSEHrch7gSxJMPIht4AxKqI/nbjzUg==}
     dev: false
 
-  /@hypercerts-org/sdk@0.8.8(@babel/core@7.23.2)(@envelop/core@3.0.6)(@ethersproject/abi@5.7.0)(@ethersproject/providers@5.7.2)(@graphql-mesh/cross-helpers@0.3.4)(@graphql-mesh/store@0.93.1)(@graphql-mesh/types@0.93.2)(@graphql-mesh/utils@0.93.2)(@graphql-tools/delegate@9.0.35)(@graphql-tools/merge@8.4.2)(@graphql-tools/utils@9.2.1)(@graphql-tools/wrap@9.4.2)(@types/node@20.5.7)(graphql-tag@2.12.6)(node-fetch@3.3.2)(react-native@0.72.6)(typescript@5.2.2)(uint8arraylist@2.4.3):
-    resolution: {integrity: sha512-IvezK/sywmTkG/Ped7UP5Kc+c2dR8GjF6r9OjQkasfFstjgvdJRReAcbCsiQul1V/Yc2SvE4uZfNilURoOn+Fw==}
+  /@hypercerts-org/sdk@0.8.9(@babel/core@7.23.2)(@envelop/core@3.0.6)(@ethersproject/abi@5.7.0)(@ethersproject/providers@5.7.2)(@graphql-mesh/cross-helpers@0.3.4)(@graphql-mesh/store@0.93.1)(@graphql-mesh/types@0.93.2)(@graphql-mesh/utils@0.93.2)(@graphql-tools/delegate@9.0.35)(@graphql-tools/merge@8.4.2)(@graphql-tools/utils@9.2.1)(@graphql-tools/wrap@9.4.2)(@types/node@20.5.7)(graphql-tag@2.12.6)(node-fetch@3.3.2)(react-native@0.72.6)(typescript@5.2.2)(uint8arraylist@2.4.3):
+    resolution: {integrity: sha512-QJ0+fS83bCNAWnl3knMyROfTLumE0fXE+3T0zg/MuLowOPDBXV4TBRk76c7nDb2YYX9InNQf3GScUwRgfvbbPA==}
     dependencies:
       '@ethereum-attestation-service/eas-sdk': 0.28.3(@ethersproject/abi@5.7.0)(@ethersproject/providers@5.7.2)(typescript@5.2.2)
       '@ethersproject/abstract-signer': 5.7.0
@@ -13679,7 +13679,7 @@ packages:
     resolution: {integrity: sha512-uWjbaKIK3T1OSVptzX7Nl6PvQ3qAGtKEtVRjRuazjfL3Bx5eI409VZSqgND+4UNnmzLVdPj9FqFJNPqBZFve4w==}
     hasBin: true
     dependencies:
-      glob: 7.2.0
+      glob: 7.2.3
     dev: false
 
   /rimraf@3.0.2:
@@ -15349,7 +15349,7 @@ packages:
       require-directory: 2.1.1
       string-width: 4.2.3
       y18n: 5.0.8
-      yargs-parser: 20.2.4
+      yargs-parser: 20.2.9
     dev: false
 
   /yargs@17.7.2:
