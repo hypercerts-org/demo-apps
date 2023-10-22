@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@hypercerts-org/sdk": "^0.8.9",
+    "@hypercerts-org/sdk": "^0.8.10",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
     "next": "13.4.19",
