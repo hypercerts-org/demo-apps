@@ -1,11 +1,11 @@
-'use client'
+"use client";
 import Image from "next/image";
 import styles from "./page.module.css";
 import { HypercertClient } from "@hypercerts-org/sdk";
 
 export default function Home() {
   const client = new HypercertClient({
-    chainId: 5, // goerli testnet
+    chain: { id: 5 }, // goerli testnet
   });
 
   return (
@@ -70,7 +70,9 @@ export default function Home() {
                     >
                       {key}
                     </td>
-                    <td style={{ color: "white" }}>{value.toString()}</td>
+                    <td style={{ color: "white" }}>
+                      {value?.toString() || "undefined"}
+                    </td>
                   </tr>
                 ))}
               </tbody>
