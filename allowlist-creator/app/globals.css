@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.front {
+  display: flex;
+  justify-content: space-between;
+}
