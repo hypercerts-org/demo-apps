@@ -1,4 +1,10 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-module.exports = nextConfig;
+// See: https://github.com/vercel/next.js/issues/44273
+module.exports = {
+  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
+    config.externals.push({
+      "utf-8-validate": "commonjs utf-8-validate",
+      bufferutil: "commonjs bufferutil",
+    });
+    return config;
+  },
+};
