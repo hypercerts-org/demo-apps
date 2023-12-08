@@ -14,11 +14,14 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@hypercerts-org/sdk": "1.0.0-alpha.15",
+    "@hypercerts-org/sdk": "1.0.0",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
     "next": "13.4.19",
     "react": "18.2.0",
     "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.42"
   }
 }
