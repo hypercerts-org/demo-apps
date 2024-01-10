@@ -128,7 +128,7 @@ const http = require("http");
 const sdk = require("@hypercerts-org/sdk");
 const client = new sdk.HypercertClient({
   chain: {
-    id: 5
+    id: 11155111
   }
 });
 const content = async () => {
