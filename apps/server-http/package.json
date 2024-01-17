@@ -26,6 +26,6 @@
     "parcel-bundler": "^1.12.5"
   },
   "dependencies": {
-    "@hypercerts-org/sdk": "1.2.0"
+    "@hypercerts-org/sdk": "1.4.1"
   }
 }
